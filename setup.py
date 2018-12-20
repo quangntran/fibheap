@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fibheap",
-    version="0.0.1",
+    version="0.0.7",
     author="Quang Tran",
     author_email="quang.tran@minerva.kgi.edu",
     description="An implementation of Fibonacci heap",

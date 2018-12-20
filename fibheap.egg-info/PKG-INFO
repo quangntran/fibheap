@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fibheap
-Version: 0.0.1
+Version: 0.0.7
 Summary: An implementation of Fibonacci heap
 Home-page: https://github.com/quangntran/fibheap.git
 Author: Quang Tran
