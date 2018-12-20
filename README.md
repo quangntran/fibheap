@@ -51,5 +51,16 @@ Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) amortized time
 
 Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap's min.
 
-# Example
-![](https://latex.codecogs.com/gif.latex?%5CTheta%28n%29)
+# Use
+Installing using pip:
+```console
+>>> pip install fibheap
+```
+Use:
+```console
+>>> from fibheap import makefheap, fheappush, fheappop, fheapunion
+>>> heap = makefheap()
+>>> num_list = [4, 2, 5, 7, 8]
+>>> for num in num_list: fsd
+… 
+```
