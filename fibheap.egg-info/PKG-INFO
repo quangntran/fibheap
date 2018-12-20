@@ -1,10 +1,10 @@
 Metadata-Version: 2.1
 Name: fibheap
 Version: 0.0.1
-Summary: A small example package
-Home-page: https://github.com/pypa/sampleproject
-Author: Example Author
-Author-email: author@example.com
+Summary: An implementation of Fibonacci heap
+Home-page: https://github.com/quangntran/fibheap.git
+Author: Quang Tran
+Author-email: quangtran0698@gmail.com
 License: UNKNOWN
 Description: # Fibonacci Heap
         
