@@ -8,10 +8,10 @@ The data structured and its operations are described Cormen et al. (chapter 19) 
 
 ### Node
 Each node has the following attributes:
-- left, right: the node's adjacent siblings. The node and its siblings are doubly linked, so they form a circular loop. If x is an only child, it is its own left and right sibling.
-- child: the representative child of the node. To access all the children of the node, first access the representative child, then access all the representative child's siblings through left and right attributes
+- left, right: the node’s adjacent siblings. The node and its siblings are doubly linked, so they form a circular loop. If x is an only child, it is its own left and right sibling.
+- child: the representative child of the node. To access all the children of the node, first access the representative child, then access all the representative child’s siblings through left and right attributes
 - parent
-- degree: the number of the node's children
+- degree: the number of the node’s children
 - mark: (description by Cormen et al.) is either True or False, indicating whether the node has lost a child since the last time it was made the child of another node. Newly created nodes are unmarked. A node becomes unmarked whenever it is made the child of another node. 
 
 ### Fibonacci Heap
@@ -37,7 +37,7 @@ Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case tim
 
 ### extract-min
 
-Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Removes and returns the minimum node. This procedure moves each of the minimum node's children to the root list, removes the minimum node itself from the root list, and consolidates the resulted tree to reduces the number of trees.
+Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Removes and returns the minimum node. This procedure moves each of the minimum node’s children to the root list, removes the minimum node itself from the root list, and consolidates the resulted tree to reduces the number of trees.
 
 ### union
 
@@ -45,22 +45,51 @@ Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case tim
 
 ### decrease-key
 
-Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) amortized time. Decreases node x's key to k. 
+Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) amortized time. Decreases node x’s key to k. 
 
 ### delete
 
-Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap's min.
+Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap’s min.
 
 # Use
 Installing using pip:
 ```console
 >>> pip install fibheap
 ```
-Use:
+Using mergable-heap operations:
 ```console
->>> from fibheap import makefheap, fheappush, fheappop, fheapunion
+>>> heap1 = makefheap()
+>>> heap2 = makefheap()
+>>> num_list1 = [1,4,2]
+>>> num_list2 = [6,-1,0]
+>>> for num in num_list1:
+...     fheappush(heap1, num)
+... 
+>>> for num in num_list2:
+...     fheappush(heap2, num)
+... 
+>>> fheapunion(heap1, heap2)
+>>> getfheapmin(heap1)
+-1
+>>> sorted_list = []
+>>> while heap1.num_nodes:
+...     sorted_list.append(fheappop(heap1))
+... 
+>>> sorted_list
+[-1, 0, 1, 2, 4, 6]
+```
+
+When data contains more than numbers:
+```console
+>>> item_list = [(3, 'a'),(0, 'z'), (2,'m'), (-2, 'r')]
 >>> heap = makefheap()
->>> num_list = [4, 2, 5, 7, 8]
->>> for num in num_list: fsd
-… 
+>>> for item in item_list:
+...     fheappush(heap, item)
+... 
+>>> sorted_list = []
+>>> while heap.num_nodes:
+...     sorted_list.append(fheappop(heap))
+... 
+>>> sorted_list
+[(-2, 'r'), (0, 'z'), (2, 'm'), (3, 'a')]
 ```
