@@ -1,6 +1,0 @@
-README.md
-setup.py
-fibheap.egg-info/PKG-INFO
-fibheap.egg-info/SOURCES.txt
-fibheap.egg-info/dependency_links.txt
-fibheap.egg-info/top_level.txt
