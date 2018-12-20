@@ -29,19 +29,19 @@ Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case tim
 
 ### insert
 
-Runs in $\Theta(1)$ worst-case time. Adds the node as a root of the heap.
+Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case time. Adds the node as a root of the heap.
 
 ### minimum
 
-Runs in $\Theta(1)$ worst-case time. Returns the min attribute of the heap.
+Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case time. Returns the min attribute of the heap.
 
 ### extract-min
 
-Runs in $O(lg\:n)$ amortized time. Removes and returns the minimum node. This procedure moves each of the minimum node's children to the root list, removes the minimum node itself from the root list, and consolidates the resulted tree to reduces the number of trees.
+Runs in ![](https://latex.codecogs.com/gif.latex?O%28log%20%5C%3An%29) amortized time. Removes and returns the minimum node. This procedure moves each of the minimum node's children to the root list, removes the minimum node itself from the root list, and consolidates the resulted tree to reduces the number of trees.
 
 ### union
 
-Runs in $\Theta(1)$ worst-case time. Makes and returns a union of two heaps. This procedure simply concatenates the two root lists.
+Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case time. Makes and returns a union of two heaps. This procedure simply concatenates the two root lists.
 
 ### decrease-key
 
@@ -49,7 +49,7 @@ Runs in $O(1)$ amortized time. Decreases node x's key to k.
 
 ### delete
 
-Runs in $O(lg\:n)$ amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap's min.
+Runs in ![](https://latex.codecogs.com/gif.latex?O%281%29) amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap's min.
 
 # Example
 ![](https://latex.codecogs.com/gif.latex?%5CTheta%28n%29)
