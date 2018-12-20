@@ -50,3 +50,6 @@ Runs in $O(1)$ amortized time. Decreases node x's key to k.
 ### delete
 
 Runs in $O(lg\:n)$ amortized time. Remove x from the heap by first setting its key to minus infinity and extracting the heap's min.
+
+# Example
+![](https://latex.codecogs.com/gif.latex?%5CTheta%28n%29)
