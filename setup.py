@@ -7,7 +7,7 @@ setuptools.setup(
     name="fibheap",
     version="0.0.1",
     author="Quang Tran",
-    author_email="quangtran0698@gmail.com",
+    author_email="quang.tran@minerva.kgi.edu",
     description="An implementation of Fibonacci heap",
     long_description=long_description,
     long_description_content_type="text/markdown",
