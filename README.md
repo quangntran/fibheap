@@ -25,7 +25,7 @@ A heap has the following attributes:
 
 ### make-heap
 
-Runs in $\Theta(1)$ worst-case time. Initializes an empty heap.
+Runs in ![](https://latex.codecogs.com/gif.latex?%5CTheta%281%29) worst-case time. Initializes an empty heap.
 
 ### insert
 
