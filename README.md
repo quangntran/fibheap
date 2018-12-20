@@ -58,6 +58,7 @@ Installing using pip:
 ```
 Using mergable-heap operations:
 ```console
+>>> from fibheap import *
 >>> heap1 = makefheap()
 >>> heap2 = makefheap()
 >>> num_list1 = [1,4,2]
