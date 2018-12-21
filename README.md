@@ -2,7 +2,7 @@
 
 ## Fibonacci Heap Overview
 
-The data structured and its operations are described Cormen et al. (chapter 19) Fibonacci heap supports mergeable-heap operations, including make-heap, insert, minimum, extract-min, and union. The data structure also supports key-decrease and delete, although using these two operations requires users to create nodes for items themselves.
+The data structure and its operations are described Cormen et al. (chapter 19) Fibonacci heap supports mergeable-heap operations, including make-heap, insert, minimum, extract-min, and union. The data structure also supports key-decrease and delete, although using these two operations requires users to create nodes for items themselves.
 
 ## Representation 
 
