@@ -1,4 +1,3 @@
-name = 'fibhaha'
 def makefheap():
     """make-heap in Cormen et al."""
     heap = Fheap()
