@@ -313,7 +313,7 @@ class Fheap:
         z = y.p
         if z:
             if not y.mark:
-                y.mark == True
+                y.mark = True
                 self.num_marks += 1
             else:
                 self.cut(y, z)
